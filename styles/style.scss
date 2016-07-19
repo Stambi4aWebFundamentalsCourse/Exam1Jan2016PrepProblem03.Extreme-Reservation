@@ -1,0 +1,171 @@
+﻿body {
+    background-image: url("images/background.jpg");
+    background-size: contain;
+    #wrapper {
+        padding:20px;
+        width: 800px;
+        margin: 0 auto;
+        height: auto;
+        border-radius: 40px;
+        background-color: rgba(255, 255, 255, 0.3);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:20px;
+        header {
+            nav {
+                width: 100%;
+                ul {
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: center;
+                    list-style-type: none;
+                    li {
+                        display: inline;
+                        margin: 0 20px;
+                        a {
+                            padding:15px 4px 15px 47px;
+                            font-weight: 600;
+                            color: #246CA7;
+                            background-repeat: no-repeat;
+                            &:hover {
+                                background-color: #76ACD0;
+                                border-radius: 5px;
+                            }
+                            &#paragliding {
+                                background-image: url("images/paraglider-icon.png");
+                            }
+                            &#skydiving {
+                                    background-image: url("images/sky-diver.png");
+                            }
+                            &#climbing {
+                                    background-image: url("images/climbing.png");
+                            }
+                            &#about-us {
+                                    background-image: url("images/about-us.png");
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+        form {
+            fieldset {
+                width: 45%;
+                height: 360px;
+                border: 2px solid #246CA7;
+                border-radius: 10px;
+                display: flex;
+                flex-flow: column;
+                align-items:center;
+                div {
+                    margin:10px;
+                    width: 90%;
+                    &.top {
+                        margin-top: 50px;
+                    }
+                }
+                legend {
+                    margin-left: 120px;
+                    color: #246CA7;
+                }
+                input, select {
+                    background-color: rgba(255, 255, 255, 0.3);
+                    border: 1px solid #246CA7;
+                    border-radius: 20px;
+                    font-size: 22px;
+                    margin: 10px;
+                    width: 90%;
+                    padding:5px;
+                }
+                &#left{
+                    float: left;
+                    color: #246CA7;
+                    input::-moz-placeholder{
+                        color: #7697B6;
+                        text-align: center;
+                    }
+                    input::-webkit-input-placeholder{
+                        color: #7697B6;
+                        text-align: center;
+                    }
+
+                    button {
+                        margin-right:-55px;
+
+                        vertical-align: middle;
+                        width: 30px;
+                        height: 30px;
+                        border: none;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        margin-bottom: 7px;
+                         &#user {
+                            background-image: url("images/user1.png")
+                        }
+                        &#email {
+                            background-image: url("images/email.png")
+                        }
+                        &#phone {
+                            background-image: url("images/phone.png")
+                        }
+                    }
+                }
+                &#right {
+                    div {
+                         span {
+                            display: block;
+                            width: 300px;
+                            text-align: center;
+                        }
+                        ul {
+                            list-style-type: none;
+                            display: inline;
+                            li {
+                                margin-left: 50px;
+                                display: inline;
+                                text-align: center;
+                                input {
+                                    width: 20px;
+                                }
+                            }
+                        }
+                    }
+                    color: #246CA7;
+                    input {
+                        text-align: center;
+                        color: #246CA7;
+                    }
+                    input::-moz-placeholder{
+                        color: #246CA7;
+                        text-align: center;
+                    }
+                    
+                    select {
+                        padding: 10px;
+                        color: #246CA7;
+                    }
+                }
+            }
+            div#buttons {
+                 margin-top: 20px;
+                 text-align: right;
+                 button {
+                    display: inline;
+                    padding: 10px;
+                    border-radius: 20px;
+                    font-size:24px;
+                    border: 1px solid;
+                    font-weight: bold;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    &[type="reset"] {
+                        color: #F3070B;
+                        border-color: #F3070B;
+                    }
+                    &[type="submit"] {
+                        color: #0EFB0D;
+                        border-color: #0EFB0D;
+                    }
+                }
+            }
+        }
+    }
+}
